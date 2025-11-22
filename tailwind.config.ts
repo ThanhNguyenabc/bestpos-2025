@@ -1,5 +1,4 @@
 import { COLORS } from "./src/utils/app_color";
-
 /** @type {import('tailwindcss').Config} */
 
 module.exports = {
@@ -36,8 +35,8 @@ module.exports = {
     },
   },
   plugins: [
-    require("tailwindcss-animate"),
-    require("@tailwindcss/typography"),
-    require("tailwind-scrollbar"),
+    import("tailwindcss-animate"),
+    import("@tailwindcss/typography"),
+    import("tailwind-scrollbar"),
   ],
 };

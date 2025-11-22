@@ -8,4 +8,5 @@ const Row = forwardRef<HTMLDivElement, HtmlHTMLAttributes<HTMLDivElement>>(
     </div>
   )
 );
+Row.displayName = "Row";
 export default Row;

@@ -11,5 +11,5 @@ const Col = React.forwardRef<
     </div>
   );
 });
-
+Col.displayName = "Col";
 export default Col;

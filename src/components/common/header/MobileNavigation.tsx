@@ -48,13 +48,14 @@ const MOBILE_MENU = [
     child: <CompanyMenu />,
   },
 ];
+type MenuItem = (typeof MOBILE_MENU)[number];
 const MobileNavigation = () => {
   const t = useTranslations();
 
   const route = useRouter();
   // const { changeLanguage } = useTrans();
 
-  const [selectedItem, setItem] = useState(null);
+  const [selectedItem, setItem] = useState<MenuItem | null>(null);
 
   const [isOpen, onOpen] = useState(false);
   useEffect(() => {
@@ -70,7 +71,7 @@ const MobileNavigation = () => {
   const openMenu = () => onOpen(true);
   const closeDrawer = () => onOpen(false);
 
-  const onMenuClick = (item) => {
+  const onMenuClick = (item: (typeof MOBILE_MENU)[number]) => {
     if (item.child) {
       return setItem(item);
     }

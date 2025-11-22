@@ -32,7 +32,7 @@ const LanguageToggle = () => {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger className="border border-neutral-300 rounded-lg p-3">
-        <Icon />
+        {Icon && <Icon />}
       </DropdownMenuTrigger>
       <DropdownMenuContent></DropdownMenuContent>
     </DropdownMenu>
