@@ -1,6 +1,5 @@
 "use client";
 // import { PhoneIcon } from "@/ui/img-resource/ExIcon";
-import PhoneIcon from "@/color-icons/phone.svg";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -52,7 +51,12 @@ const Header = () => {
           href={`tel:${PHONE}`}
           className="flex items-center p-2 gap-2 flex-row md:p-3 md:gap-3 border-2 border-orange-500 rounded-lg"
         >
-          <PhoneIcon />
+          <Image
+            width={24}
+            height={24}
+            src={"/color-icons/phone.svg"}
+            alt="phone"
+          />
           <Text className="text-sm-semibold text-center">{PHONE}</Text>
         </Link>
 
