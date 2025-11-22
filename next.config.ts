@@ -12,7 +12,7 @@ const nextConfig: NextConfig = {
   // i18n: {
   //   defaultLocale: "en",
   //   locales: ["en", "es"],
-  // },
+  // },\
   turbopack: {
     rules: {
       "*.svg": {
@@ -20,6 +20,9 @@ const nextConfig: NextConfig = {
         as: "*.js",
       },
     },
+  },
+  experimental: {
+    optimizeCss: true,
   },
   // webpack(config) {
   //   // Grab the existing rule that handles SVG imports
